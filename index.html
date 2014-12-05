@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>Alex Tong</title>
 	<style>
 		html {
 			background: #4e5359 url(resources/images/bg_universal.png) repeat 0 0;
+			font-size: 16px;
+			font-family: "microsoft yahei", "Helvetica";
+
 		}
 
 		body {
@@ -19,6 +22,7 @@
 
 		.about-me {
 			display: inline-block;
+			color: #ffffff;
 		}
 
 		.about-me .avatar {
@@ -29,19 +33,96 @@
 			border-radius: 50%;
 		}
 
-		.avatar img{
+		.about-me .name {
+			margin-top: 20px;
+		}
+
+		.about-me .profile {
+			margin-top: 20px;
+			font-size: 12px;
+			color: #c6c6c6;
+		}
+
+		.avatar img {
 			width: 100%;
 			height: 100%;
 			border-radius: 50%;
 		}
 
-	</style>
+		.coding {
+			padding: 20px 10px;
+			text-align: left;
+		}
 
+		.coding .comment {
+			font-style: italic;
+			color: #555;
+		}
+
+		.coding .keyword {
+			color: #cda869;
+		}
+
+		.coding .paren {
+			color: #24C2C7;
+		}
+
+		.coding .identifier {
+		}
+
+		.coding .operator {
+			color: #fa8d6a;
+		}
+
+		.coding .type {
+			color: #aac6e3;
+		}
+
+	</style>
 </head>
 <body>
 <div class="about-me">
 	<div class="avatar">
 		<img src="resources/images/alextong.png">
+	</div>
+	<div class="name">
+		<div><span>Alex Tong</span></div>
+		<div><span>佟呼格吉乐图</span></div>
+	</div>
+
+	<div class="profile">
+		<div>
+			<div>强迫症患者、数码控</div>
+			<div>羽毛球&骑行爱好者</div>
+		</div>
+	</div>
+	<div class="coding">
+		<div class="comment"><span>//my good life</span></div>
+		<div>
+			<span class="keyword">while</span> <span class="paren">(</span><span class="identifier">behappy</span><span
+				class="paren">()){</span>
+		</div>
+		<div style="padding: 5px 20px">
+			<span>code()</span><span class="operator">;</span>
+		</div>
+		<div>
+			<span>}</span>
+		</div>
+
+		<div>
+			<span class="type">function</span><span class="identifier"> code</span><span class="paren">(){</span>
+		</div>
+		<div style="padding: 5px 20px">
+			<span class="identifier">Java</span><span class="paren">()</span><span class="operator">||</span>
+			<span class="identifier">Javascript</span><span class="paren">()</span><span class="operator">||</span>
+			<span class="identifier">NodeJS</span><span class="paren">()</span><span class="operator">||</span>
+			<div></div>
+			<span class="identifier">CoffeeScript</span><span class="paren">()</span><span class="operator">||</span>
+			<span class="identifier">HTML&CSS</span><span class="paren">()</span><span class="operator">;</span>
+		</div>
+		<div>
+			<span>}</span>
+		</div>
 	</div>
 
 </div>
